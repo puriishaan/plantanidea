@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plant An Idea | Home</title>
+  <meta name="description" content="Plant An Idea — revolutionising farming with a low-cost, efficient seed planter for rural Indian farmers." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="assets/img/leaf-logo.png" alt="" />Plant An Idea</a>
+    <nav class="nav">
+      <a href="index.html" class="active">Our Company</a>
+      <a href="planter.html">The Planter</a>
+      <a href="journey.html">Journey &amp; Impact</a>
+      <a href="about.html">About Us</a>
+    </nav>
+  </header>
+
+  <!-- ===== Hero video ===== -->
+  <section class="hero-video">
+    <video src="assets/video/hero.mp4" poster="assets/img/hero-poster.jpg" autoplay muted loop playsinline></video>
+  </section>
+
+  <main>
+    <!-- ===== Mission ===== -->
+    <section class="mission wrap">
+      <h1>Plant An Idea</h1>
+      <p>Plant An Idea's mission is to revolutionise farming through the development of a low-cost, efficient seed planter tailored to the needs of rural Indian farmers. By simplifying the sowing process, this innovative tool aims to increase productivity and crop yield, reduce manual labor, and promote sustainable agricultural practices. Through this initiative, we strive to bridge the technological gap and support farmers in building resilient livelihoods.</p>
+    </section>
+
+    <!-- ===== Farmer testimonial video ===== -->
+    <section class="feature-video wrap">
+      <video src="assets/video/farmer.mp4" poster="assets/img/farmer-poster.jpg" controls playsinline></video>
+    </section>
+
+    <!-- ===== Stats ===== -->
+    <section class="stats wrap">
+      <div class="stat"><div class="num">10+</div><div class="label">Farmers worked with.</div></div>
+      <div class="stat"><div class="num">200+</div><div class="label">Youth worked with.</div></div>
+      <div class="stat"><div class="num">30%</div><div class="label">Yield Rate Increase.</div></div>
+      <div class="stat"><div class="num">2</div><div class="label">Partnerships secured (farm2foods, DASRA)</div></div>
+    </section>
+
+    <!-- ===== Contact form ===== -->
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <h2>Fill out the form and we'll be in touch!</h2>
+        <form class="form-grid" id="contactForm">
+          <div class="field"><label for="fn">First name</label><input id="fn" name="firstName" type="text" /></div>
+          <div class="field"><label for="ln">Last name</label><input id="ln" name="lastName" type="text" /></div>
+          <div class="field"><label for="ph">Phone</label><input id="ph" name="phone" type="tel" /></div>
+          <div class="field"><label for="em">* Email Address</label><input id="em" name="email" type="email" required /></div>
+          <div class="field full"><label for="msg">Message</label><textarea id="msg" name="message"></textarea></div>
+          <div class="field full"><button class="btn" type="submit">Submit</button></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="f-brand"><img src="assets/img/leaf-logo.png" alt="" />Plant An Idea</div>
+      <div class="f-contact">Contact: <a href="mailto:plantanidea.contact@gmail.com">plantanidea.contact@gmail.com</a></div>
+    </div>
+  </footer>
+
+  <!-- Static-friendly form: composes an email to the team (no backend needed).
+       Can be swapped for a Formspree/Getform endpoint for stored submissions. -->
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var f = e.target;
+      var body =
+        'Name: ' + (f.firstName.value || '') + ' ' + (f.lastName.value || '') + '\n' +
+        'Phone: ' + (f.phone.value || '') + '\n' +
+        'Email: ' + (f.email.value || '') + '\n\n' +
+        (f.message.value || '');
+      window.location.href = 'mailto:plantanidea.contact@gmail.com' +
+        '?subject=' + encodeURIComponent('Website enquiry from ' + (f.firstName.value || 'visitor')) +
+        '&body=' + encodeURIComponent(body);
+    });
+  </script>
+</body>
+</html>

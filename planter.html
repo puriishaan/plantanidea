@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Planter | Plant An Idea</title>
+  <meta name="description" content="The Plant An Idea seed planter — AI detection, precision farming, germination sprayer, and ease of use." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="assets/img/leaf-logo.png" alt="" />Plant An Idea</a>
+    <nav class="nav">
+      <a href="index.html">Our Company</a>
+      <a href="planter.html" class="active">The Planter</a>
+      <a href="journey.html">Journey &amp; Impact</a>
+      <a href="about.html">About Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="wrap" style="text-align:center;">
+      <h1 class="page-title page-title--black" style="text-align:center;">The Planter</h1>
+      <div class="see-more-wrap"><a class="btn-outline" href="#gallery">See More</a></div>
+    </section>
+
+    <!-- Feature grid around the device -->
+    <section class="wrap planter-grid">
+      <div class="col">
+        <div class="feat">
+          <h3>AI</h3>
+          <p>Our robust AI Model can customise spray rate by detecting seed type, as well as notify farmers if any spoiled seeds have been planted.</p>
+        </div>
+        <div class="feat">
+          <h3>Germination Sprayer</h3>
+          <p>Each seed is properly coated the right amount of germination fluid when dispensed, traditionally cow urine.</p>
+        </div>
+      </div>
+      <div class="center-img"><img src="assets/img/planter-device.png" alt="The Plant An Idea seed planter" /></div>
+      <div class="col">
+        <div class="feat">
+          <h3>Precision Farming</h3>
+          <p>Farmers get accurate yield predictions and spacial constructs of their plot, allowing them to predict their harvest.</p>
+        </div>
+        <div class="feat">
+          <h3>Ease of Use</h3>
+          <p>Simply attach a bottle of the germination fluid and connect the device to a portable charger (charged by Solar), and push the machine.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery: demo videos + control flow -->
+    <section class="wrap gallery" id="gallery">
+      <div class="col">
+        <div class="media">
+          <video src="assets/video/planter-ai.mp4" poster="assets/img/planter-device.png" controls playsinline></video>
+          <div class="cap">AI Detection in Action</div>
+        </div>
+        <div class="media">
+          <video src="assets/video/planter-app.mp4" controls playsinline></video>
+          <div class="cap">Android App on Phone</div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="media">
+          <video src="assets/video/planter-sprayer.mp4" controls playsinline></video>
+          <div class="cap">Germination fluid sprayer (activated by wheel mouth)</div>
+        </div>
+        <div class="media">
+          <video src="assets/video/planter-dispense.mp4" controls playsinline></video>
+          <div class="cap">Showing how seed is dispensed</div>
+        </div>
+      </div>
+      <div class="diagram">
+        <img src="assets/img/control-flow.png" alt="Control flow diagram of the planter electronics" />
+        <div class="cap">Control Flow</div>
+        <p>To create this required many hours of designing and creating, including 3d printing, metal working, soldering, creating a new updatable AI model, and coming up with an effective control flow. The AI was trained upon data provided by farmers, and created using some other advanced techniques.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="f-brand"><img src="assets/img/leaf-logo.png" alt="" />Plant An Idea</div>
+      <div class="f-contact">Contact: <a href="mailto:plantanidea.contact@gmail.com">plantanidea.contact@gmail.com</a></div>
+    </div>
+  </footer>
+
+</body>
+</html>
