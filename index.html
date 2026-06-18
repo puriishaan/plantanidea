@@ -3,90 +3,148 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Plant An Idea | Home</title>
-  <meta name="description" content="Plant An Idea — revolutionising farming with a low-cost, efficient seed planter for rural Indian farmers." />
+  <title>Plant An Idea — Grassroots Agri-Tech</title>
+  <meta name="description" content="Plant An Idea is a student-led NGO revolutionising farming with a low-cost, efficient seed planter built for rural Indian farmers." />
+  <meta property="og:title" content="Plant An Idea" />
+  <meta property="og:description" content="Revolutionising farming with a low-cost, efficient seed planter for rural Indian farmers." />
+  <meta property="og:image" content="assets/img/hero-poster.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- ===== Header ===== -->
-  <header class="site-header">
-    <a class="brand" href="index.html"><img src="assets/img/leaf-logo.png" alt="" />Plant An Idea</a>
-    <nav class="nav">
+  <header class="nav">
+    <a class="nav__brand" href="index.html"><img src="assets/img/leaf-logo.png" alt="" />Plant An Idea</a>
+    <nav class="nav__links">
       <a href="index.html" class="active">Our Company</a>
       <a href="planter.html">The Planter</a>
       <a href="journey.html">Journey &amp; Impact</a>
       <a href="about.html">About Us</a>
+      <a class="nav__cta" href="#contact">Get in touch</a>
     </nav>
+    <button class="nav__burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
   </header>
 
-  <!-- ===== Hero video ===== -->
-  <section class="hero-video">
-    <video src="assets/video/hero.mp4" poster="assets/img/hero-poster.jpg" autoplay muted loop playsinline></video>
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <video class="hero__bg" src="assets/video/hero.mp4" poster="assets/img/hero-poster.jpg" autoplay muted loop playsinline></video>
+    <div class="hero__scrim"></div>
+    <div class="hero__inner">
+      <p class="eyebrow">Grassroots agri-tech</p>
+      <h1>Planting ideas, growing futures.</h1>
+      <p class="hero__sub">We're revolutionising farming with a low-cost, efficient seed planter built for the needs of rural Indian farmers.</p>
+      <div class="hero__actions">
+        <a class="btn btn--solid" href="planter.html">Explore the Planter</a>
+        <a class="btn btn--ghost" href="journey.html">Our Journey</a>
+      </div>
+    </div>
+    <a class="hero__scroll" href="#mission" aria-label="Scroll">↓</a>
   </section>
 
   <main>
     <!-- ===== Mission ===== -->
-    <section class="mission wrap">
-      <h1>Plant An Idea</h1>
-      <p>Plant An Idea's mission is to revolutionise farming through the development of a low-cost, efficient seed planter tailored to the needs of rural Indian farmers. By simplifying the sowing process, this innovative tool aims to increase productivity and crop yield, reduce manual labor, and promote sustainable agricultural practices. Through this initiative, we strive to bridge the technological gap and support farmers in building resilient livelihoods.</p>
+    <section class="section" id="mission">
+      <div class="container">
+        <p class="eyebrow">Our mission</p>
+        <div class="mission">
+          <div class="reveal">
+            <p class="mission__lead">Plant An Idea's mission is to <span class="hl">revolutionise farming</span> through a low-cost, efficient seed planter tailored to rural Indian farmers.</p>
+            <p>By simplifying the sowing process, this innovative tool increases productivity and crop yield, reduces manual labor, and promotes sustainable agricultural practices. Through this initiative, we strive to bridge the technological gap and support farmers in building resilient livelihoods.</p>
+            <a class="btn btn--lightghost" href="planter.html" style="margin-top:24px;">See how it works →</a>
+          </div>
+          <div class="mission__img reveal"><img src="assets/img/planter-device.png" alt="The Plant An Idea seed planter" style="background:#fff;border:1px solid var(--line);object-fit:contain;padding:24px;" /></div>
+        </div>
+      </div>
     </section>
 
-    <!-- ===== Farmer testimonial video ===== -->
-    <section class="feature-video wrap">
-      <video src="assets/video/farmer.mp4" poster="assets/img/farmer-poster.jpg" controls playsinline></video>
+    <!-- ===== Impact stats ===== -->
+    <section class="section section--green">
+      <div class="container">
+        <p class="eyebrow">Impact so far</p>
+        <div class="stats reveal">
+          <div class="stat"><div class="num">10+</div><div class="label">Farmers worked with</div></div>
+          <div class="stat"><div class="num">200+</div><div class="label">Youth worked with</div></div>
+          <div class="stat"><div class="num">30%</div><div class="label">Yield rate increase</div></div>
+          <div class="stat"><div class="num">2</div><div class="label">Partnerships secured (farm2foods, DASRA)</div></div>
+        </div>
+      </div>
     </section>
 
-    <!-- ===== Stats ===== -->
-    <section class="stats wrap">
-      <div class="stat"><div class="num">10+</div><div class="label">Farmers worked with.</div></div>
-      <div class="stat"><div class="num">200+</div><div class="label">Youth worked with.</div></div>
-      <div class="stat"><div class="num">30%</div><div class="label">Yield Rate Increase.</div></div>
-      <div class="stat"><div class="num">2</div><div class="label">Partnerships secured (farm2foods, DASRA)</div></div>
+    <!-- ===== Story / testimonial video ===== -->
+    <section class="section section--cream2">
+      <div class="container">
+        <p class="eyebrow">Voices from the field</p>
+        <div class="split reveal">
+          <div>
+            <h2 class="h-sec">Built with farmers, for farmers.</h2>
+            <p style="color:var(--ink-soft);">Every design decision starts on the ground in Assam — talking to the people who'll actually use the planter, and refining it around their needs.</p>
+            <a class="btn btn--lightghost" href="journey.html" style="margin-top:24px;">Read our journey →</a>
+          </div>
+          <div class="split__media"><video src="assets/video/farmer.mp4" poster="assets/img/farmer-poster.jpg" controls playsinline></video></div>
+        </div>
+      </div>
     </section>
 
-    <!-- ===== Contact form ===== -->
-    <section class="contact" id="contact">
-      <div class="wrap">
-        <h2>Fill out the form and we'll be in touch!</h2>
-        <form class="form-grid" id="contactForm">
-          <div class="field"><label for="fn">First name</label><input id="fn" name="firstName" type="text" /></div>
-          <div class="field"><label for="ln">Last name</label><input id="ln" name="lastName" type="text" /></div>
-          <div class="field"><label for="ph">Phone</label><input id="ph" name="phone" type="tel" /></div>
-          <div class="field"><label for="em">* Email Address</label><input id="em" name="email" type="email" required /></div>
-          <div class="field full"><label for="msg">Message</label><textarea id="msg" name="message"></textarea></div>
-          <div class="field full"><button class="btn" type="submit">Submit</button></div>
-        </form>
+    <!-- ===== Contact ===== -->
+    <section class="section section--green" id="contact">
+      <div class="container">
+        <div class="contact-split">
+          <div class="reveal">
+            <h2>Fill out the form and we'll be in touch!</h2>
+            <p>Whether you're a farmer, a partner, or just curious — we'd love to hear from you.</p>
+          </div>
+          <form class="form-grid reveal" id="contactForm">
+            <div class="field"><label for="fn">First name</label><input id="fn" name="firstName" type="text" /></div>
+            <div class="field"><label for="ln">Last name</label><input id="ln" name="lastName" type="text" /></div>
+            <div class="field"><label for="ph">Phone</label><input id="ph" name="phone" type="tel" /></div>
+            <div class="field"><label for="em">Email Address *</label><input id="em" name="email" type="email" required /></div>
+            <div class="field full"><label for="msg">Message</label><textarea id="msg" name="message"></textarea></div>
+            <div class="field full"><button class="btn btn--solid" type="submit">Submit</button></div>
+          </form>
+        </div>
       </div>
     </section>
   </main>
 
-  <!-- ===== Footer ===== -->
   <footer class="site-footer">
-    <div class="wrap">
-      <div class="f-brand"><img src="assets/img/leaf-logo.png" alt="" />Plant An Idea</div>
-      <div class="f-contact">Contact: <a href="mailto:plantanidea.contact@gmail.com">plantanidea.contact@gmail.com</a></div>
+    <div class="container">
+      <div class="site-footer__top">
+        <div>
+          <div class="f-brand"><img src="assets/img/leaf-logo.png" alt="" />Plant An Idea</div>
+          <p>A student-led NGO using technology to make farming more productive, sustainable, and dignified.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Our Company</a></li>
+            <li><a href="planter.html">The Planter</a></li>
+            <li><a href="journey.html">Journey &amp; Impact</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:plantanidea.contact@gmail.com">plantanidea.contact@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/ishaanpuri2008/" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__bar"><span>© <span id="yr"></span> Plant An Idea</span><span>Assam · Singapore</span></div>
     </div>
   </footer>
 
-  <!-- Static-friendly form: composes an email to the team (no backend needed).
-       Can be swapped for a Formspree/Getform endpoint for stored submissions. -->
   <script>
     document.getElementById('contactForm').addEventListener('submit', function (e) {
-      e.preventDefault();
-      var f = e.target;
-      var body =
-        'Name: ' + (f.firstName.value || '') + ' ' + (f.lastName.value || '') + '\n' +
-        'Phone: ' + (f.phone.value || '') + '\n' +
-        'Email: ' + (f.email.value || '') + '\n\n' +
-        (f.message.value || '');
-      window.location.href = 'mailto:plantanidea.contact@gmail.com' +
-        '?subject=' + encodeURIComponent('Website enquiry from ' + (f.firstName.value || 'visitor')) +
-        '&body=' + encodeURIComponent(body);
+      e.preventDefault(); var f = e.target;
+      var body = 'Name: ' + (f.firstName.value||'') + ' ' + (f.lastName.value||'') + '\n' +
+        'Phone: ' + (f.phone.value||'') + '\nEmail: ' + (f.email.value||'') + '\n\n' + (f.message.value||'');
+      window.location.href = 'mailto:plantanidea.contact@gmail.com?subject=' +
+        encodeURIComponent('Website enquiry from ' + (f.firstName.value||'visitor')) + '&body=' + encodeURIComponent(body);
     });
   </script>
+  <script src="app.js"></script>
 </body>
 </html>

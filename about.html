@@ -3,45 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us | Plant An Idea</title>
-  <meta name="description" content="About the founder of Plant An Idea — Ishaan Puri, student, researcher, and social entrepreneur." />
+  <title>About the Founder — Plant An Idea</title>
+  <meta name="description" content="Ishaan Puri — student, researcher, and social entrepreneur, and the founder of Plant An Idea." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <header class="site-header">
-    <a class="brand" href="index.html"><img src="assets/img/leaf-logo.png" alt="" />Plant An Idea</a>
-    <nav class="nav">
+  <header class="nav nav--light">
+    <a class="nav__brand" href="index.html"><img src="assets/img/leaf-logo.png" alt="" />Plant An Idea</a>
+    <nav class="nav__links">
       <a href="index.html">Our Company</a>
       <a href="planter.html">The Planter</a>
       <a href="journey.html">Journey &amp; Impact</a>
       <a href="about.html" class="active">About Us</a>
+      <a class="nav__cta" href="index.html#contact">Get in touch</a>
     </nav>
+    <button class="nav__burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
   </header>
 
   <main>
-    <section class="wrap about-founder">
-      <div class="photo"><img src="assets/img/founder.png" alt="Ishaan Puri, founder of Plant An Idea" /></div>
-      <div class="bio">
-        <h1 class="page-title page-title--black" style="margin-top:0;">About The Founder</h1>
-        <p>Ishaan Puri is a Grade 10 student at Singapore American School, deeply passionate about STEM, sustainability, and social entrepreneurship. His journey into agricultural innovation began when he participated in a program by DASRA, an Indian venture philanthropy fund. During this experience, he gained profound insights into the challenges faced by Indian farmers—particularly the lack of innovation due to social perceptions of farming as a low-status profession.</p>
-        <p>Motivated by his passion for sustainability and the urgent need for transformation in the agricultural sector, Ishaan founded Plant An Idea, an initiative dedicated to bridging the technological divide between rural farmers and urban companies. His work aims to improve agrifood systems and increase farmers' livelihoods through addressing the inefficiencies of the planting process, namely in seed planting. Through this endeavor, he hopes to empower communities and inspire youth worldwide to take meaningful action toward sustainability and social change.</p>
-        <p>Beyond social entrepreneurship, Ishaan is an avid researcher with a deep interest in quantum computing and artificial intelligence. As a research assistant at the National University of Singapore, he is working on trying to trap a Beryllium ion. His interests also extend to AI-driven solutions that can revolutionise industries, including agriculture.</p>
-        <p>Ishaan thrives on academic challenges and building things from the ground up, believing that true change comes from innovation and hands-on problem-solving. He continuously seeks to develop new ideas that can disrupt traditional industries and create sustainable impact. While deeply engaged in scientific exploration and entrepreneurship, Ishaan also finds time for creative and physical pursuits. He is a drummer for his school's band and enjoys playing tennis.</p>
-        <a class="btn-outline" href="https://www.linkedin.com/in/ishaanpuri2008/" target="_blank" rel="noopener">Connect On LinkedIn</a>
+    <section class="phero">
+      <div class="container">
+        <p class="eyebrow">About</p>
+        <h1 class="h-title">About the Founder</h1>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:46px;">
+      <div class="container">
+        <div class="founder reveal">
+          <div class="founder__photo"><img src="assets/img/founder.png" alt="Ishaan Puri, founder of Plant An Idea" /></div>
+          <div class="founder__bio">
+            <p>Ishaan Puri is a Grade 10 student at Singapore American School, deeply passionate about STEM, sustainability, and social entrepreneurship. His journey into agricultural innovation began when he participated in a program by DASRA, an Indian venture-philanthropy fund. During this experience, he gained profound insights into the challenges faced by Indian farmers — particularly the lack of innovation due to social perceptions of farming as a low-status profession.</p>
+            <p>Motivated by his passion for sustainability and the urgent need for transformation in agriculture, Ishaan founded Plant An Idea — an initiative dedicated to bridging the technological divide between rural farmers and urban companies. His work aims to improve agrifood systems and increase farmers' livelihoods by addressing the inefficiencies of seed planting. Through this endeavor, he hopes to empower communities and inspire youth worldwide to take meaningful action toward sustainability and social change.</p>
+            <p>Beyond social entrepreneurship, Ishaan is an avid researcher with a deep interest in quantum computing and artificial intelligence. As a research assistant at the National University of Singapore, he is working on trapping a Beryllium ion. His interests also extend to AI-driven solutions that can revolutionise industries, including agriculture.</p>
+            <p>Ishaan thrives on academic challenges and building things from the ground up, believing that true change comes from innovation and hands-on problem-solving. While deeply engaged in scientific exploration and entrepreneurship, he also finds time for creative and physical pursuits — he's a drummer for his school's band and enjoys playing tennis.</p>
+            <a class="btn btn--solid" href="https://www.linkedin.com/in/ishaanpuri2008/" target="_blank" rel="noopener" style="margin-top:8px;">Connect on LinkedIn</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap">
-      <div class="f-brand"><img src="assets/img/leaf-logo.png" alt="" />Plant An Idea</div>
-      <div class="f-contact">Contact: <a href="mailto:plantanidea.contact@gmail.com">plantanidea.contact@gmail.com</a></div>
+    <div class="container">
+      <div class="site-footer__top">
+        <div>
+          <div class="f-brand"><img src="assets/img/leaf-logo.png" alt="" />Plant An Idea</div>
+          <p>A student-led NGO using technology to make farming more productive, sustainable, and dignified.</p>
+        </div>
+        <div><h4>Explore</h4><ul><li><a href="index.html">Our Company</a></li><li><a href="planter.html">The Planter</a></li><li><a href="journey.html">Journey &amp; Impact</a></li><li><a href="about.html">About Us</a></li></ul></div>
+        <div><h4>Contact</h4><ul><li><a href="mailto:plantanidea.contact@gmail.com">plantanidea.contact@gmail.com</a></li><li><a href="https://www.linkedin.com/in/ishaanpuri2008/" target="_blank" rel="noopener">LinkedIn</a></li></ul></div>
+      </div>
+      <div class="site-footer__bar"><span>© <span id="yr"></span> Plant An Idea</span><span>Assam · Singapore</span></div>
     </div>
   </footer>
 
+  <script src="app.js"></script>
 </body>
 </html>
