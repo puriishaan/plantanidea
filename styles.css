@@ -115,6 +115,14 @@ h1,h2,h3{font-family:var(--display);font-weight:600;letter-spacing:-.02em;line-h
 .split__media img{width:100%;border-radius:var(--radius);}
 .split--planter .split__media{background:var(--cream-2);border:1px solid var(--line);border-radius:var(--radius);padding:30px;}
 
+/* ===== Voices from the field — centered testimonial video ===== */
+.eyebrow--center{justify-content:center;}
+.voices{max-width:960px;margin:0 auto;text-align:center;}
+.voices h2{margin-bottom:14px;}
+.voices > p{color:var(--ink-soft);max-width:600px;margin:0 auto 34px;}
+.voices__video{border-radius:var(--radius);overflow:hidden;background:#000;box-shadow:0 26px 60px rgba(11,58,38,.18);margin-bottom:30px;}
+.voices__video video{display:block;width:100%;height:auto;}
+
 /* ===== Gallery (videos) ===== */
 .vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
 .vitem{background:var(--cream-2);border:1px solid var(--line);border-radius:14px;overflow:hidden;}
